@@ -1,7 +1,7 @@
 from django.db import models
 from django.utils import timezone
 
-
+# My blog page model
 class Post(models.Model):
     author = models.ForeignKey('auth.User')
     title = models.CharField(max_length=200)
